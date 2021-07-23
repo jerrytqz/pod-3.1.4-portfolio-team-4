@@ -1,23 +1,21 @@
+<a name="projects"></a>
 <div class="header-container">
     <hr class="divider" style="margin-right: 25px;margin-left:30px"/>
     <div class="section-title">Projects</div>
     <hr class="divider" style="margin-left: 25px;margin-right:30px"/>
 </div>
-<div class="card-container">
-    {% for item in site.data.projects %}
-    {% if item.page-name %}
-    <a href="/projects/{{ item.page-name }}">
+{% for item in site.data.projects %}
+{% if item.page-name %}
+<a href="/projects/{{ item.page-name }}">
     {% else %}
     <a>
-    {% endif %}
-      <div class="card">
-        <div class="info">
-          <p class="title">{{ item.title }}</p>
-          <p class="location">{{ item.event }}</p>
-          <p class="dates">{{ item.date }}</p>
+        {% endif %}
+        <div class="card">
+            <div class="info">
+                <p class="title">{{ item.title }}</p>
+                <p class="location">{{ item.event }}</p>
+                <p class="dates">{{ item.date }}</p>
+            </div>
         </div>
-      </div>
     </a>
     {% endfor %}
-  </div>
-  
