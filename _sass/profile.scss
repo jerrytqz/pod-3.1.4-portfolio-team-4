@@ -20,6 +20,9 @@
     }
     
     .profile-picture {
+        display: flex; 
+        justify-content: center;
+        align-items: center; 
         margin-bottom: 30px;
         height: 200px;
     }
@@ -46,3 +49,18 @@
     outline: none;
 }
 
+.greeting {
+    font-size: 100px !important;
+}
+
+.typing-bar {
+    background-color: white; 
+    height: 100px; 
+    width: 5px; 
+    margin-left: 5px; 
+}
+
+.dynamic-text {
+    display: flex; 
+    align-items: center;
+}
