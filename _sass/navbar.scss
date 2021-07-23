@@ -1,103 +1,73 @@
 .nav-bar {
-  width: 100%;
-  display: inline-block;
-  background-color: #1c539f;
-  font-family: "Poppins", serif;
-  font-weight: 700 !important;
-  padding-top: 0px;
-  position: fixed;
-
-}
-
-.nav-content .logo-touch-target {
-  display: inline-flex;
-  height: 60%;
-  width: 350px;
-}
-
-.nav-content .nav-logo {
-  height: 60px;
-  margin: auto;
-}
-
-.nav-logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.nav-logo img {
-  width: 200px;
-}
-
-.nav-content nav {
-  display: block;
-  width: 100%;
-  text-align: right;
-  padding-top: 0px;
-  padding-right: 0px;
-}
+    margin: auto;
+    display: flex; 
+    width: 100%; 
+    background-color: indigo;
+    font-family: "Poppins", serif;
+    font-weight: 700 !important;
+    padding-right: 46px;
+    padding-left: 30px; 
+    position: sticky;
+    top: 0; 
+    justify-content: space-between;
+    z-index: 900;
+}     
 
 .darkModeContainer {
-  position: relative;
   color: white;
+  display: flex; 
+  align-items: center; 
 
   .blue-rectangle {
-    margin-left: 30px; 
-    margin-top: 20px;
     width: 60px;
     height: 35px;
     display: inline-block;
     border-radius: 30px;
     background-color: #2f7cff;
-    position: relative;
+    cursor: pointer;
 
     .white-circle {
+      margin-top: 2px; 
       width: 30px;
       height: 30px;
       display: inline-block;
       border-radius: 50%;
       background-color: white;
-      position: absolute;
-      top: 2px;
       cursor: pointer;
     }
   }
 
   .dark-text {
-    position: absolute;
-    top: 5px;
-    margin-left: 5px;
-    margin-top: 20px; 
+    margin-left: 10px;
   }
 }
 
 .toggleRight {
-  right: 3px;
-  transition: all 0.4s ease-in;
+  margin-left: 30px;
+  transition: all 0.4s;
 }
 
-
-   ul{
-       list-style-type: none;
-       overflow: hidden;
-       position: fixed;
-       top: 5px;
-       width: 100%;
-       left: 10%;
-         margin-left: 5px;
-    margin-top: 5px;
-   }
-   li {
-       float: left;
-   }
-   li a {
-       display: block;
-       color: white;
-       text-align: center;
-       padding: 14px 16px;
-       text-decoration: none;
-   }
-   li a:hover:not(.active) {
-       background-color: #0090ff;
-   }
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0; 
+    padding: 0; 
+}
+   
+li {
+    float: left;
+}
+   
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+   
+li a:hover:not(.active) {
+    background-color: #0090ff;
+    color: white; 
+    text-decoration: none; 
+}

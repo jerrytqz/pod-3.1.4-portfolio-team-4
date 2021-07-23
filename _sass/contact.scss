@@ -1,0 +1,19 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 75%; 
+    margin: auto; 
+}
+
+.submit-button {
+    background-color: white; 
+    margin: auto; 
+    margin-top: 15px; 
+    width: 15%; 
+    border: 1px solid black; 
+}
+
+.submit-button:hover {
+    background-color: #2f7cff;
+    color: white; 
+}
